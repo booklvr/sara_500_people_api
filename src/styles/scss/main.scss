@@ -1,7 +1,21 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-h1 {
-  background-color: $h1-bg-color;
-  user-select: none;
-}
+@import "components/about";
+@import "components/answers";
+@import "components/button";
+@import "components/form";
+@import "components/question-box";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+
+@import "pages/home";
+

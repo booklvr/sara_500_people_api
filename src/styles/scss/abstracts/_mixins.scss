@@ -1,0 +1,76 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone;
+600 - 900px:    Tablet Portrait;  (max-width)
+900 - 1200px:   Tablet Landscape;  (max-width)
+1200 - 1800px:  Normal Style;
+1800px + :      Big desktop  ( min width)
+*/
+
+
+/*
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typogropahy > general layout + grid > page layout > components;
+
+1 em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media(max-width: 37.5em) { @content };     //600px
+    }
+    @if $breakpoint == tab-port {
+        @media(max-width: 56.25em) { @content };    //900px
+    }
+    @if $breakpoint == tab-land {
+        @media(max-width: 75em) { @content };       //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media(min-width: 112.5em) { @content };    //1800px
+    }
+}
+
+@mixin section($color1, $color2, $angle, $url: null) {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,
+                                      rgba($color1, 0.8),
+                                      rgba($color2, 0.8)),
+                                    url($url);
+    background-size: cover;
+
+    @if $angle == up {
+        transform: skewY(-3deg);
+
+        & > * { transform: skewY(3deg); }
+    }
+    @else {
+        transform: skewY(3deg);
+
+        & > * { transform: skewY(-3deg); }
+    }
+
+
+    @include respond(tab-land) {
+        padding: 12rem 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
+}

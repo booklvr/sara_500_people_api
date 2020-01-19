@@ -1,0 +1,71 @@
+.answer-box {
+  padding: 2rem;
+  background-color: $color-grey-light-1;
+  border-radius: 5px;
+
+
+
+  &__info {
+    height: 6rem;
+    background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &--location {
+      width: 25%;
+      float: left;
+
+      &-city {
+        display: block;
+      }
+
+      &-country {
+
+      }
+    }
+
+    &--number {
+      font-family: 'Indie Flower', cursive;
+      font-size: 5rem;
+      width: 25%;
+      margin-top: -2rem;
+      margin-bottom: -5rem;
+      float: right;
+      text-align: right;
+      padding-right: 2rem;
+
+      background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    &--name {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+  }
+
+  &__answer {
+    padding-top: 1.5rem;
+
+    &--icon {
+      font-size: 2.5rem;
+      display: inline;
+      float: left;
+      background-image: linear-gradient(to right, $color-secondary-dark, $color-secondary-light);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    &--text {
+      display: inline;
+      padding-left: 1.5rem;
+      vertical-align: top;
+
+    }
+  }
+
+
+}

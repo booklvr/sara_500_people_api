@@ -1,0 +1,47 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 15rem 0;
+    margin-top: -5rem;
+    position: relative;
+    z-index: -1;
+
+    // @include respond(big-desktop) {
+    //     margin-top: -5rem;
+    // }
+
+    @include respond(big-desktop) {
+        margin-top: -10rem;
+    }
+
+    @include respond(tab-land) {
+        padding: 12rem 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
+
+
+}
+
+.section-questions {
+    @include section($color-secondary-light, $color-secondary-dark, up, "../../img/journal.jpg");
+}
+
+.section-answers {
+
+    @include section($color-primary-light, $color-primary-dark, down);
+
+    position: relative;
+    z-index: 1;
+}
+
+.section-form {
+    @include section($color-secondary-light, $color-secondary-dark, up, "../../img/map.jpg");
+}
+
+

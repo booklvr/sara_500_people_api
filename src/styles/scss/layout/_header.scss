@@ -1,0 +1,64 @@
+.header {
+  height: 80vh;
+  background-image: linear-gradient(to left top,
+                                  rgba($color-primary-light, 0.9),
+                                  rgba($color-primary-dark, 0.9)),
+                                url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71vh);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 71vh);
+
+  @include respond(big-desktop) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 67vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 67vh);
+  }
+
+  @include respond(tab-land) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 72vh);
+  }
+
+  @include respond(tab-port) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73vh);
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    color: black;
+  }
+
+  &__title-box {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+
+  &__totals-box {
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+}
+
+
+
+
+
+

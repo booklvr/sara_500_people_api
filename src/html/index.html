@@ -5,13 +5,251 @@
     <title> <%= htmlWebpackPlugin.options.title %> </title>
 </head>
 <body>
-    <!--this is a comment-->
-    <div>
-        <h1>This is a test</h1>
-        <h1>This is a second test</h1>
-        <h2>This is a test for style2</h2>
+    <!-- Navigation -->
+    <!-- <div class="admin">
+        <input type="checkbox" class="admin__checkbox" id="admin-toggle">
+
+        <label for="admin-toggle" class="admin__button">
+            <span class="admin__icon">&nbsp;</span>
+        </label>
+
+        <div class="admin__background">&nbsp;</div>
+
+        <div class="admin__form">
+            <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                    <h2 class="heading-form">
+                        Admin Login
+                    </h2>
+                </div>
+                <div class="admin__form-group">
+                    <input type="text" class="form__input" placeholder="ID" id="id" required>
+                    <label for="id" class="form__label">ID</label>
+                </div>
+                <div class="admin__form-group">
+                    <input type="password" class="form__input" placeholder="Password" id="password" required>
+                    <label for="password" class="form__label">Password</label>
+                </div>
+                <div class="admin__form-group">
+                    <button class="btn btn--green">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <div class="header">
+        <!-- <div class="header__logo-box">
+
+        </div> -->
+
+        <div class="header__title-box">
+            <div class="heading-primary">
+                <span class="heading-primary--main">chance</span>
+                <span class="heading-primary--sub">encouters</span>
+            </div>
+        </div>
+        <div class="header__totals-box">
+            <div class="heading-primary">
+                <span class="heading-primary--met">0</span>
+                <span class="heading-primary--forwardSlash">/</span>
+                <span class="heading-primary--total">500</span>
+            </div>
+        </div>
     </div>
 
-<!--     <script src="bundle.js"></script>
- --></body>
+
+
+    <main>
+        <section class="section-about u-center-text">
+            <div class=" u-margin-bottom-big">
+                <h2 class="heading-secondary">Questions for 500 Strangers</h2>
+            </div>
+
+            <div class="row">
+                <div class="motivation">
+                    <p class="paragraph--large">
+                        I started this project with the goal of ....Pariatur ut est ex minim ex deserunt ullamco deserunt occaecat esse in ut aute incididunt magna dolore sed id in duis quis. In ad exercitation veniam adipisicing in nisi est exercitation ut deserunt pariatur fugiat velit enim sit ex ea pariatur. Tempor ad excepteur sunt proident in enim mollit aliqua sed deserunt magna laboris consectetur in aute in sit nulla in culpa id minim occaecat aute velit nisi aute esse adipisicing ullamco.  WHY DID YOU DO THIS?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-questions">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="question-box">
+                        <i class="question-box__icon icon-basic-heart"></i>
+                        <h3 class="question-box__text heading-tertiary u-margin-bottom-small">
+                            What food could you eat everyday?
+                            <br>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="question-box">
+                        <i class="question-box__icon icon-basic-settings"></i>
+                        <h3 class="question-box__text heading-tertiary u-margin-bottom-small">
+                            When you were a child, what did you want to be when you grow up?
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="question-box">
+                        <i class="question-box__icon icon-basic-star"></i>
+                        <h3 class="question-box__text heading-tertiary u-margin-bottom-small">
+                            If you could be very good at one thing, what would it be?
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="question-box">
+                        <i class="question-box__icon icon-basic-message-multiple"></i>
+                        <h3 class="question-box__text heading-tertiary u-margin-bottom-small">
+                            If you could go for dinner tonight with anyone, who would you choose?
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-answers">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="answer-box">
+                        <div class="answer-box__info">
+                            <h4 class="answer-box__info--location">
+                                <span class="answer-box__info--location-city">Abbotsford</span>
+                                <span class="answer-box__info--location-country">Canada</span>
+                            </h4>
+                            <h4 class="answer-box__info--number">1</h4>
+                            <h4 class="answer-box__info--name">Name Name</h4>
+                        </div>
+
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-heart"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-settings"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-star"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-message-multiple"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-lightbulb"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="answer-box">
+                        <div class="answer-box__info">
+                            <h4 class="answer-box__info--location">
+                                <span class="answer-box__info--location-city">Abbotsford</span>
+                                <span class="answer-box__info--location-country">Canada</span>
+                            </h4>
+                            <h4 class="answer-box__info--number">1</h4>
+                            <h4 class="answer-box__info--name">Name Name</h4>
+                        </div>
+
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-heart"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-settings"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-star"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-message-multiple"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                        <div class="answer-box__answer">
+                            <i class="answer-box__answer--icon icon-basic-lightbulb"></i>
+                            <p class="answer-box__answer--text">Commodo nisi eiusmod fugiat sed ea sint aliqua reprehenderit quis deserunt labore aliquip culpa sed dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <div class="add">
+                    <div class="add__form">
+                        <div class="u-margin-bottom-medium">
+                            <h2 class="heading-secondary">
+                                Add a new Encounter
+                            </h2>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__group__info">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group__info">
+                                <input type="text" class="form__input" placeholder="City" id="city" required>
+                                <label for="city" class="form__label">City</label>
+                            </div>
+                            <div class="form__group__info">
+                                <input type="country" class="form__input" placeholder="Country" id="country" required>
+                                <label for="country" class="form__label">Country</label>
+                            </div>
+                            <div class="form__group__text">
+                                <textarea name="food" id="food" class="form__text" placeholder="What food could you eat everyday?" required></textarea>
+                                <label for="food" class="form__label">What food could you eat everday?</label>
+                            </div>
+                            <div class="form__group__text">
+                                <textarea name="food" id="food" class="form__text" placeholder="When you were a child, what did you want to be when you grew up?" required></textarea>
+                                <label for="food" class="form__label">When you were a child, what did you want to be when you grew up?</label>
+                            </div>
+                            <div class="form__group__text">
+                                <textarea name="food" id="food" class="form__text" placeholder="If you could be very good at one thing, what would it be?" required></textarea>
+                                <label for="food" class="form__label">If you could be very good at one thing, what would it be?</label>
+                            </div>
+                            <div class="form__group__text">
+                                <textarea name="food" id="food" class="form__text" placeholder="If you could go for dinner tonight with anyone, who would you choose?" required></textarea>
+                                <label for="food" class="form__label">If you could go for dinner tonight with anyone, who would you choose?</label>
+                            </div>
+                            <div class="form__group__text">
+                                <textarea name="extra" id="extra" class="form__text" placeholder="Is there anything else you would like to add?" required></textarea>
+                                <label for="food" class="form__label">Is there anything else you would like to add?</label>
+                            </div>
+                            <div class="form__group__button">
+                                <button class="btn btn--blue">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <footer class="footer">
+        <p class="copyright">
+            <span class="copyright-btn">&copy;</span>
+            Copyright 2019 by Nicholas de Waal
+        </p>
+    </footer>
+
+
+
+
+
+</body>
 </html>

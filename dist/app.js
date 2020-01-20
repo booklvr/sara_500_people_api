@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "eb38a69e4c67c6b6346e";
+/******/ 	var hotCurrentHash = "9cc0a1808946614ddc67";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -10408,6 +10408,34 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/icon-font.css":
+/*!*****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/icon-font.css ***!
+  \*****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./fonts/linea-basic-10.eot */ "./src/styles/css/fonts/linea-basic-10.eot");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ./fonts/linea-basic-10.woff */ "./src/styles/css/fonts/linea-basic-10.woff");
+var ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ./fonts/linea-basic-10.ttf */ "./src/styles/css/fonts/linea-basic-10.ttf");
+var ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ./fonts/linea-basic-10.svg */ "./src/styles/css/fonts/linea-basic-10.svg");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___, { hash: "?#iefix" });
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___, { hash: "#linea-basic-10" });
+// Module
+exports.push([module.i, "@font-face {\n  font-family: \"linea-basic-10\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"embedded-opentype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n[data-icon]:before {\n  font-family: \"linea-basic-10\" !important;\n  content: attr(data-icon);\n  font-style: normal !important;\n  font-weight: normal !important;\n  font-variant: normal !important;\n  text-transform: none !important;\n  speak: none;\n  line-height: 1;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n[class^=\"icon-basic\"]:before,\n[class*=\" icon-basic\"]:before {\n  font-family: \"linea-basic-10\" !important;\n  font-style: normal !important;\n  font-weight: normal !important;\n  font-variant: normal !important;\n  text-transform: none !important;\n  speak: none;\n  line-height: 1;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.icon-basic-accelerator:before {\n  content: \"a\"; }\n\n.icon-basic-alarm:before {\n  content: \"b\"; }\n\n.icon-basic-anchor:before {\n  content: \"c\"; }\n\n.icon-basic-anticlockwise:before {\n  content: \"d\"; }\n\n.icon-basic-archive:before {\n  content: \"e\"; }\n\n.icon-basic-archive-full:before {\n  content: \"f\"; }\n\n.icon-basic-ban:before {\n  content: \"g\"; }\n\n.icon-basic-battery-charge:before {\n  content: \"h\"; }\n\n.icon-basic-battery-empty:before {\n  content: \"i\"; }\n\n.icon-basic-battery-full:before {\n  content: \"j\"; }\n\n.icon-basic-battery-half:before {\n  content: \"k\"; }\n\n.icon-basic-bolt:before {\n  content: \"l\"; }\n\n.icon-basic-book:before {\n  content: \"m\"; }\n\n.icon-basic-book-pen:before {\n  content: \"n\"; }\n\n.icon-basic-book-pencil:before {\n  content: \"o\"; }\n\n.icon-basic-bookmark:before {\n  content: \"p\"; }\n\n.icon-basic-calculator:before {\n  content: \"q\"; }\n\n.icon-basic-calendar:before {\n  content: \"r\"; }\n\n.icon-basic-cards-diamonds:before {\n  content: \"s\"; }\n\n.icon-basic-cards-hearts:before {\n  content: \"t\"; }\n\n.icon-basic-case:before {\n  content: \"u\"; }\n\n.icon-basic-chronometer:before {\n  content: \"v\"; }\n\n.icon-basic-clessidre:before {\n  content: \"w\"; }\n\n.icon-basic-clock:before {\n  content: \"x\"; }\n\n.icon-basic-clockwise:before {\n  content: \"y\"; }\n\n.icon-basic-cloud:before {\n  content: \"z\"; }\n\n.icon-basic-clubs:before {\n  content: \"A\"; }\n\n.icon-basic-compass:before {\n  content: \"B\"; }\n\n.icon-basic-cup:before {\n  content: \"C\"; }\n\n.icon-basic-diamonds:before {\n  content: \"D\"; }\n\n.icon-basic-display:before {\n  content: \"E\"; }\n\n.icon-basic-download:before {\n  content: \"F\"; }\n\n.icon-basic-exclamation:before {\n  content: \"G\"; }\n\n.icon-basic-eye:before {\n  content: \"H\"; }\n\n.icon-basic-eye-closed:before {\n  content: \"I\"; }\n\n.icon-basic-female:before {\n  content: \"J\"; }\n\n.icon-basic-flag1:before {\n  content: \"K\"; }\n\n.icon-basic-flag2:before {\n  content: \"L\"; }\n\n.icon-basic-floppydisk:before {\n  content: \"M\"; }\n\n.icon-basic-folder:before {\n  content: \"N\"; }\n\n.icon-basic-folder-multiple:before {\n  content: \"O\"; }\n\n.icon-basic-gear:before {\n  content: \"P\"; }\n\n.icon-basic-geolocalize-01:before {\n  content: \"Q\"; }\n\n.icon-basic-geolocalize-05:before {\n  content: \"R\"; }\n\n.icon-basic-globe:before {\n  content: \"S\"; }\n\n.icon-basic-gunsight:before {\n  content: \"T\"; }\n\n.icon-basic-hammer:before {\n  content: \"U\"; }\n\n.icon-basic-headset:before {\n  content: \"V\"; }\n\n.icon-basic-heart:before {\n  content: \"W\"; }\n\n.icon-basic-heart-broken:before {\n  content: \"X\"; }\n\n.icon-basic-helm:before {\n  content: \"Y\"; }\n\n.icon-basic-home:before {\n  content: \"Z\"; }\n\n.icon-basic-info:before {\n  content: \"0\"; }\n\n.icon-basic-ipod:before {\n  content: \"1\"; }\n\n.icon-basic-joypad:before {\n  content: \"2\"; }\n\n.icon-basic-key:before {\n  content: \"3\"; }\n\n.icon-basic-keyboard:before {\n  content: \"4\"; }\n\n.icon-basic-laptop:before {\n  content: \"5\"; }\n\n.icon-basic-life-buoy:before {\n  content: \"6\"; }\n\n.icon-basic-lightbulb:before {\n  content: \"7\"; }\n\n.icon-basic-link:before {\n  content: \"8\"; }\n\n.icon-basic-lock:before {\n  content: \"9\"; }\n\n.icon-basic-lock-open:before {\n  content: \"!\"; }\n\n.icon-basic-magic-mouse:before {\n  content: \"\\\"\"; }\n\n.icon-basic-magnifier:before {\n  content: \"#\"; }\n\n.icon-basic-magnifier-minus:before {\n  content: \"$\"; }\n\n.icon-basic-magnifier-plus:before {\n  content: \"%\"; }\n\n.icon-basic-mail:before {\n  content: \"&\"; }\n\n.icon-basic-mail-multiple:before {\n  content: \"'\"; }\n\n.icon-basic-mail-open:before {\n  content: \"(\"; }\n\n.icon-basic-mail-open-text:before {\n  content: \")\"; }\n\n.icon-basic-male:before {\n  content: \"*\"; }\n\n.icon-basic-map:before {\n  content: \"+\"; }\n\n.icon-basic-message:before {\n  content: \",\"; }\n\n.icon-basic-message-multiple:before {\n  content: \"-\"; }\n\n.icon-basic-message-txt:before {\n  content: \".\"; }\n\n.icon-basic-mixer2:before {\n  content: \"/\"; }\n\n.icon-basic-mouse:before {\n  content: \":\"; }\n\n.icon-basic-notebook:before {\n  content: \";\"; }\n\n.icon-basic-notebook-pen:before {\n  content: \"<\"; }\n\n.icon-basic-notebook-pencil:before {\n  content: \"=\"; }\n\n.icon-basic-paperplane:before {\n  content: \">\"; }\n\n.icon-basic-pencil-ruler:before {\n  content: \"?\"; }\n\n.icon-basic-pencil-ruler-pen:before {\n  content: \"@\"; }\n\n.icon-basic-photo:before {\n  content: \"[\"; }\n\n.icon-basic-picture:before {\n  content: \"]\"; }\n\n.icon-basic-picture-multiple:before {\n  content: \"^\"; }\n\n.icon-basic-pin1:before {\n  content: \"_\"; }\n\n.icon-basic-pin2:before {\n  content: \"`\"; }\n\n.icon-basic-postcard:before {\n  content: \"{\"; }\n\n.icon-basic-postcard-multiple:before {\n  content: \"|\"; }\n\n.icon-basic-printer:before {\n  content: \"}\"; }\n\n.icon-basic-question:before {\n  content: \"~\"; }\n\n.icon-basic-rss:before {\n  content: \"\\\\\"; }\n\n.icon-basic-server:before {\n  content: \"\\e000\"; }\n\n.icon-basic-server2:before {\n  content: \"\\e001\"; }\n\n.icon-basic-server-cloud:before {\n  content: \"\\e002\"; }\n\n.icon-basic-server-download:before {\n  content: \"\\e003\"; }\n\n.icon-basic-server-upload:before {\n  content: \"\\e004\"; }\n\n.icon-basic-settings:before {\n  content: \"\\e005\"; }\n\n.icon-basic-share:before {\n  content: \"\\e006\"; }\n\n.icon-basic-sheet:before {\n  content: \"\\e007\"; }\n\n.icon-basic-sheet-multiple:before {\n  content: \"\\e008\"; }\n\n.icon-basic-sheet-pen:before {\n  content: \"\\e009\"; }\n\n.icon-basic-sheet-pencil:before {\n  content: \"\\e00a\"; }\n\n.icon-basic-sheet-txt:before {\n  content: \"\\e00b\"; }\n\n.icon-basic-signs:before {\n  content: \"\\e00c\"; }\n\n.icon-basic-smartphone:before {\n  content: \"\\e00d\"; }\n\n.icon-basic-spades:before {\n  content: \"\\e00e\"; }\n\n.icon-basic-spread:before {\n  content: \"\\e00f\"; }\n\n.icon-basic-spread-bookmark:before {\n  content: \"\\e010\"; }\n\n.icon-basic-spread-text:before {\n  content: \"\\e011\"; }\n\n.icon-basic-spread-text-bookmark:before {\n  content: \"\\e012\"; }\n\n.icon-basic-star:before {\n  content: \"\\e013\"; }\n\n.icon-basic-tablet:before {\n  content: \"\\e014\"; }\n\n.icon-basic-target:before {\n  content: \"\\e015\"; }\n\n.icon-basic-todo:before {\n  content: \"\\e016\"; }\n\n.icon-basic-todo-pen:before {\n  content: \"\\e017\"; }\n\n.icon-basic-todo-pencil:before {\n  content: \"\\e018\"; }\n\n.icon-basic-todo-txt:before {\n  content: \"\\e019\"; }\n\n.icon-basic-todolist-pen:before {\n  content: \"\\e01a\"; }\n\n.icon-basic-todolist-pencil:before {\n  content: \"\\e01b\"; }\n\n.icon-basic-trashcan:before {\n  content: \"\\e01c\"; }\n\n.icon-basic-trashcan-full:before {\n  content: \"\\e01d\"; }\n\n.icon-basic-trashcan-refresh:before {\n  content: \"\\e01e\"; }\n\n.icon-basic-trashcan-remove:before {\n  content: \"\\e01f\"; }\n\n.icon-basic-upload:before {\n  content: \"\\e020\"; }\n\n.icon-basic-usb:before {\n  content: \"\\e021\"; }\n\n.icon-basic-video:before {\n  content: \"\\e022\"; }\n\n.icon-basic-watch:before {\n  content: \"\\e023\"; }\n\n.icon-basic-webpage:before {\n  content: \"\\e024\"; }\n\n.icon-basic-webpage-img-txt:before {\n  content: \"\\e025\"; }\n\n.icon-basic-webpage-multiple:before {\n  content: \"\\e026\"; }\n\n.icon-basic-webpage-txt:before {\n  content: \"\\e027\"; }\n\n.icon-basic-world:before {\n  content: \"\\e028\"; }\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/style2.css":
 /*!**************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/style2.css ***!
@@ -13051,7 +13079,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_css_style2_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/css/style2.css */ "./src/styles/css/style2.css");
 /* harmony import */ var _styles_css_style2_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css_style2_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _js_logger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/logger */ "./src/js/logger.js");
+/* harmony import */ var _styles_css_icon_font_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/css/icon-font.css */ "./src/styles/css/icon-font.css");
+/* harmony import */ var _styles_css_icon_font_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css_icon_font_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _js_logger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/logger */ "./src/js/logger.js");
+
 
 
 
@@ -13059,7 +13090,7 @@ console.log("hello");
 console.log('hello please work');
 console.log('please continue to work');
 console.log('this is index JS');
-Object(_js_logger__WEBPACK_IMPORTED_MODULE_2__["default"])('hello from logMessage'); // Needed for Hot Module Replacement
+Object(_js_logger__WEBPACK_IMPORTED_MODULE_3__["default"])('hello from logMessage'); // Needed for Hot Module Replacement
 
 if (typeof module.hot !== 'undefined') {
   module.hot.accept(); // eslint-disable-line no-undef
@@ -13081,6 +13112,111 @@ var logMessage = function logMessage(msg) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (logMessage);
+
+/***/ }),
+
+/***/ "./src/styles/css/fonts/linea-basic-10.eot":
+/*!*************************************************!*\
+  !*** ./src/styles/css/fonts/linea-basic-10.eot ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e4de528c00da0c081906c3caea289f0f.eot");
+
+/***/ }),
+
+/***/ "./src/styles/css/fonts/linea-basic-10.svg":
+/*!*************************************************!*\
+  !*** ./src/styles/css/fonts/linea-basic-10.svg ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "177764eadf43efc393ebb98329a774b2.svg");
+
+/***/ }),
+
+/***/ "./src/styles/css/fonts/linea-basic-10.ttf":
+/*!*************************************************!*\
+  !*** ./src/styles/css/fonts/linea-basic-10.ttf ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e6763f008205c55db623cdf68bbd581f.ttf");
+
+/***/ }),
+
+/***/ "./src/styles/css/fonts/linea-basic-10.woff":
+/*!**************************************************!*\
+  !*** ./src/styles/css/fonts/linea-basic-10.woff ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "61f3a8a387a64abfc0535cd0813cd71a.woff");
+
+/***/ }),
+
+/***/ "./src/styles/css/icon-font.css":
+/*!**************************************!*\
+  !*** ./src/styles/css/icon-font.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./icon-font.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/icon-font.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(module.i, content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./icon-font.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/icon-font.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./icon-font.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/css/icon-font.css");
+
+              newContent = newContent.__esModule ? newContent.default : newContent;
+
+              if (typeof newContent === 'string') {
+                newContent = [[module.i, newContent, '']];
+              }
+
+              update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+module.exports = exported;
 
 /***/ }),
 

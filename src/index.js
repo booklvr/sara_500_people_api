@@ -1,5 +1,6 @@
 import './styles/scss/main.scss';
 import './styles/css/style2.css';
+import './styles/css/icon-font.css';
 import logMessage from './js/logger';
 
 console.log("hello");

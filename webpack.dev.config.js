@@ -71,6 +71,14 @@ module.exports = {
                         loader: 'file-loader'
                     }
                 ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    }
+                ]
             }
         ]
     },

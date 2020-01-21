@@ -29,6 +29,17 @@ router.post('/', async (req, res) => {
     return res.send(person);
 });
 
+router.delete('/:personId', async (req, res) => {
+    const person = await req.context.models.Person.findById(req.params.personId);
+
+    let result = null;
+    if (person) {
+        result = await person.remove();
+    }
+
+    return res.send(result);
+});
+
 export default router;
 
 

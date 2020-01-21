@@ -5,6 +5,9 @@ import uuidv4 from 'uuid/v4'; // creates unique ideas uudiv4()
 
 //import models and routes
 
+import routes from './routes';
+
+
 const app = express();
 
 //MIDDLEWARE
@@ -12,7 +15,7 @@ const app = express();
 app.use(express.json());  // body-parser - parses incoming request stream and makes it accessible on req.body and exposes it as json
 
 //ROUTES
-// app.use('/session', routes.session);
+app.use('/session', routes.session);
 
 
 // add cors hearer to every request by default

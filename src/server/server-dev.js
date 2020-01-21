@@ -3,6 +3,8 @@ import 'dotenv/config';  // load environment variables from
 import cors from 'cors';  // creates a cors header to prevent "Cross-Origin Request Blocked errors"
 import express from 'express'; // creates express server
 
+
+
 import webpack from 'webpack';
 import webpackDevMilddleWare from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
@@ -10,10 +12,12 @@ import config from '../../webpack.dev.config.js';
 
 import uuidv4 from 'uuid/v4'; // creates unique ideas uudiv4()
 
+
 //import models and routes
 
 //MIDDLEWARE
 
+import routes from './routes';
 
 const app = express(),
             DIST_DIR = __dirname,
@@ -28,26 +32,29 @@ app.use(webpackHotMiddleware(compiler));
 
 
 
-// app.use(express.json());    // body-parser - parses incoming request stream and makes it accessible on req.body and exposes it as json
+app.use(express.json());    // body-parser - parses incoming request stream and makes it accessible on req.body and exposes it as json
 
 //ROUTES
-// app.use('/session', routes.session);
+app.use('/session', routes.session);
+app.use('/answers', routes.answers);
+app.use('/users', routes.users);
 
 
-// add cors hearer to every request by default
-// app.use(cors());
+// add cors header to every request by default
+app.use(cors());
 
 // HOMEPAGE TEST
-app.get('/test', (req, res, next) => {
+app.get('/', (req, res, next) => {
     compiler.outputFileSystem.readFile(HTML_FILE, (err, result) => {
         if (err) {
             return next (err);
         }
         res.set('content-type', 'text/html')
-        res.send(result)
-        res.end()
-    })
-})
+        res.send(result);
+        res.end();
+    });
+});
+
 
 
 

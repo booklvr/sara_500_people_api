@@ -14,6 +14,21 @@ router.get('/:personId', async (req, res) => {
     return res.send(person);
 });
 
+router.post('/', async (req, res) => {
+    const person = await req.context.models.Person.create({
+        name: req.body.name,
+        city: req.body.city,
+        country: req.body.country,
+        food: req.body.food,
+        job: req.body.job,
+        skill: req.body.skill,
+        dinner: req.body.dinner,
+        etc: req.body.etc,
+        user: req.context.me.id,
+    });
+    return res.send(person);
+});
+
 export default router;
 
 

@@ -14,15 +14,24 @@ import uuidv4 from 'uuid/v4'; // creates unique ideas uudiv4()
 
 
 //import models and routes
-
-//MIDDLEWARE
-
+import models, { connectDb } from '../js/models';
 import routes from './routes';
+
 
 const app = express(),
             DIST_DIR = __dirname,
             HTML_FILE = path.join(DIST_DIR, 'index.html'),
             compiler = webpack(config);
+
+//MIDDLEWARE
+// MIDDLEWARE COMES FIRST
+app.use( async (req, res, next) => {
+    req.context = {
+        models,
+        me: await models.User.findByLogin('saradewaal') // pseuda authenticated user
+    };
+    next();
+});
 
 app.use(webpackDevMilddleWare(compiler, {
     publicPath: config.output.publicPath
@@ -36,7 +45,7 @@ app.use(express.json());    // body-parser - parses incoming request stream and 
 
 //ROUTES
 app.use('/session', routes.session);
-app.use('/answers', routes.answers);
+app.use('/persons', routes.persons);
 app.use('/users', routes.users);
 
 
@@ -55,17 +64,39 @@ app.get('/', (req, res, next) => {
     });
 });
 
+const eraseDataBaseOnSync = true;
+const PORT = process.env.PORT || 3000;
 
-
-
-app.get('/test', (req, res) => {
-    return res.send("Recievd a GET HTTP method");
+connectDb().then(async () => {
+    if (eraseDataBaseOnSync) {
+        await Promise.all([
+            models.User.deleteMany({}),
+            models.Person.deleteMany({})
+        ])
+        createPersons();
+    }
+    app.listen(process.env.PORT, () => {
+        console.log(`Example app listenning on port ${process.env.PORT}!`);
+    })
 })
 
-const PORT = process.env.PORT || 8080;
+const createPersons = async () => {
+    console.log('YOU ARE ADDING A USER AND PERSON');
+    const sara = new models.User({
+        username: 'saradewaal',
+    })
 
-app.listen(process.env.PORT, () => {
-    console.log(`Example app listening on port ${process.env.PORT}!`);
-})
+    const person1 = new models.Person({
+        name: 'nick',
+        city: 'busan',
+        country: 'korea',
+        food: 'steak',
+        job: 'robber',
+        skill: 'hacker',
+        dinner: 'Nietzsche',
+    });
 
+    await sara.save();
+    await person1.save();
+};
 
